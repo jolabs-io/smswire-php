@@ -6,7 +6,7 @@ Send SMS and one-time codes from your app through your own Android phones with [
 composer require smswire/smswire-php
 ```
 
-PHP 8.1+, Guzzle 7. Includes a Laravel notification channel, facade and webhook middleware (auto-discovered).
+PHP 8.2+, Guzzle 7, Laravel 11+. Includes a Laravel notification channel, facade and webhook middleware (auto-discovered).
 
 ## Set up
 

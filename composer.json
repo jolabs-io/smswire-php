@@ -1,0 +1,43 @@
+{
+    "name": "smswire/smswire-php",
+    "description": "Official PHP SDK for SMSWire: send SMS and one-time codes through your own Android phones. Includes a Laravel notification channel.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["sms", "otp", "android", "gateway", "smswire", "laravel", "notifications"],
+    "homepage": "https://smswire.app",
+    "support": {
+        "docs": "https://smswire.app/docs",
+        "source": "https://github.com/yosefw1221/smswire-php"
+    },
+    "require": {
+        "php": "^8.1",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5 || ^11.0",
+        "orchestra/testbench": "^8.0 || ^9.0 || ^10.0"
+    },
+    "suggest": {
+        "illuminate/notifications": "For the Laravel notification channel (auto-discovered)"
+    },
+    "autoload": {
+        "psr-4": { "SMSWire\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "SMSWire\\Tests\\": "tests/" }
+    },
+    "extra": {
+        "laravel": {
+            "providers": ["SMSWire\\Laravel\\SMSWireServiceProvider"],
+            "aliases": { "SMSWire": "SMSWire\\Laravel\\Facades\\SMSWire" }
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}

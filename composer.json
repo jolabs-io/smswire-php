@@ -7,7 +7,7 @@
     "homepage": "https://smswire.app",
     "support": {
         "docs": "https://smswire.app/docs",
-        "source": "https://github.com/yosefw1221/smswire-php"
+        "source": "https://github.com/jolabs-io/smswire-php"
     },
     "require": {
         "php": "^8.2",
